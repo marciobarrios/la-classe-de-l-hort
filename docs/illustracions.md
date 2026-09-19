@@ -1,8 +1,8 @@
 # Il·lustracions
 
-Generades amb l'eina integrada image_gen el 19 de setembre de 2026. Les tres imatges aportades per la família són referències de direcció artística i no s'inclouen en el lloc web. Imatges originals generades, convertides a WebP amb ImageMagick. No s'han copiat il·lustracions de bancs d'imatges.
+Generades amb l'eina integrada image_gen el 19 de setembre de 2026. Les tres imatges aportades per la família són referències de direcció artística i no s'inclouen en el lloc web. Imatges originals generades i optimitzades per al web. No s'han copiat il·lustracions de bancs d'imatges.
 
-Fitxers: public/images/hort.webp i public/images/hortalisses.webp. L'atles d'hortalisses es mostra amb enquadrament CSS per conservar el fitxer original complet.
+Fitxers: public/images/hort.webp i public/images/hortalisses/*.webp. Cada hortalissa té un WebP independent identificat pel seu `id`; així se'n poden afegir de noves sense regenerar ni tornar a descarregar un atles complet.
 
 ## Prompts finals
 
@@ -13,3 +13,7 @@ Use case: illustration-story. Create one beautiful wide landscape illustration, 
 vegetables
 
 Use case: scientific-educational. Produce a 1536x1024 landscape illustration asset sheet with EXACTLY 12 isolated vegetable illustrations, arranged precisely in a regular 4 column by 3 row grid, equally spaced cell centers, each vegetable fully within its cell with large blank padding. Background uniformly warm beige #f5eedf. Handmade matte gouache, subtle colored pencil texture, charming simple organic silhouettes, deep forest green and muted cheerful natural colors, no heavy black outlines. Each object isolated, no ground shadow. ROW 1 from left to right: one orange pumpkin with little green stem; one orange carrot with leafy green tops; one purple eggplant with green cap; one leafy green lettuce head. ROW 2 from left to right: one red tomato with green star stem; one long green zucchini; one opened green pea pod containing round peas; one green globe artichoke with stem. ROW 3 from left to right: one green broccoli crown; one bunch of broad spinach leaves with thin stems; one pale golden onion with dry stem; one red pink radish with leafy tops and thin white root. Accurate recognizable vegetable anatomy for young children. Exact 4x3 grid and order, each cell contains one vegetable item only. No words, no labels, no people, no UI, no borders or cell lines. All drawings same hand-painted gouache style.
+
+new vegetables
+
+Use case: scientific-educational. Asset type: 2 by 2 vegetable sprite sheet for a Catalan primary-school garden website. Create one square illustration sheet with exactly four isolated vegetables, one per quadrant: top left one dark green cucumber, top right one glossy red bell pepper, bottom left one bunch of Swiss chard with broad green leaves and red-white stems, bottom right one white cauliflower with surrounding green leaves. Use public/images/hortalisses.webp only as the exact style reference. Uniform pale warm cream background matching the reference, no shadows or ground plane. Soft hand-painted gouache on textured paper, realistic botanical forms, warm approachable classroom illustration. Strict even 2 by 2 grid; each vegetable fully visible, centered in its own quadrant, generous clear margins, no overlap, similar visual scale. Exactly four vegetables in the specified positions; anatomically recognizable; no labels, text, border, symbols, people, extra produce or watermark. A second targeted edit made the cucumber slender, cylindrical and clearly distinct from a zucchini while preserving the rest of the sheet.

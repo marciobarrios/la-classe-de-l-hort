@@ -9,43 +9,19 @@ export function VegetableArt({
   vegetable: Vegetable;
   className?: string;
 }) {
-  // Individual bounds keep neighboring paintings out of each illustration.
-  const crops = [
-    [22, 35, 356, 304],
-    [403, 12, 350, 360],
-    [800, 13, 339, 334],
-    [1148, 34, 380, 311],
-    [29, 367, 351, 277],
-    [410, 376, 335, 265],
-    [782, 358, 376, 290],
-    [1162, 349, 361, 311],
-    [23, 649, 357, 354],
-    [400, 646, 368, 368],
-    [811, 650, 298, 354],
-    [1143, 650, 381, 374],
-  ];
-  const [x, y, width, height] = crops[vegetable.sprite];
-  const ratio = width / height;
   return (
     <div
       aria-hidden="true"
       className={`relative aspect-[9/8] w-full mix-blend-darken ${className}`}
     >
-      <div
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-no-repeat"
-        style={{
-          width: `${Math.min(1, ratio / (9 / 8)) * 96}%`,
-          height: `${Math.min(1, 9 / 8 / ratio) * 96}%`,
-          clipPath:
-            vegetable.id === "pastanaga"
-              ? "polygon(0 0, 100% 0, 100% 88%, 60% 88%, 60% 100%, 0 100%)"
-              : vegetable.id === "rave"
-                ? "polygon(0 0, 38% 0, 38% 5%, 63% 5%, 63% 0, 100% 0, 100% 100%, 0 100%)"
-                : undefined,
-          backgroundImage: "url(/images/hortalisses.webp)",
-          backgroundSize: `${(1536 / width) * 100}% ${(1024 / height) * 100}%`,
-          backgroundPosition: `${(x / (1536 - width)) * 100}% ${(y / (1024 - height)) * 100}%`,
-        }}
+      <img
+        src={`/images/hortalisses/${vegetable.id}.webp`}
+        alt=""
+        width={540}
+        height={480}
+        loading="lazy"
+        decoding="async"
+        className="h-full w-full object-contain"
       />
     </div>
   );

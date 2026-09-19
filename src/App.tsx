@@ -4,6 +4,7 @@ import {
   ArrowRight,
   BookOpen,
   Check,
+  ExternalLink,
   Flower2,
   Heart,
   Leaf,
@@ -364,6 +365,12 @@ export default function App() {
               </h3>
               <p className="text-lg leading-relaxed">{selected.care}</p>
             </div>
+            <div>
+              <h3 className="mb-1 text-sm font-bold text-[#59664b]">
+                Una descoberta més
+              </h3>
+              <p className="text-lg leading-relaxed">{selected.more}</p>
+            </div>
           </div>
           <div className="mt-5">
             <h3 className="mb-3 text-sm font-bold">
@@ -384,6 +391,15 @@ export default function App() {
               })}
             </div>
           </div>
+          <a
+            href="https://canalsalut.gencat.cat/ca/vida-saludable/alimentacio/aliments/hortalisses/"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-bold underline underline-offset-4 hover:text-clay"
+          >
+            Més informació a gencat.cat
+            <ExternalLink size={16} aria-hidden="true" />
+          </a>
         </Modal>
       )}
       {family && (
