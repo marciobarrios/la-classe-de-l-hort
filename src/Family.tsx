@@ -37,8 +37,8 @@ export default function Family() {
         <p className="leading-relaxed">
           És una selecció orientativa per a Catalunya, no un calendari de
           sembra. Les varietats, la zona i el temps fan variar les dates. Un
-          aliment pot aparèixer en diverses estacions. La carbassa i la ceba
-          seca també es conserven després de collir-les.
+          aliment pot aparèixer en diverses estacions. La carbassa, la ceba
+          seca, l’all sec i la patata també es conserven després de collir-los.
         </p>
         <p className="mt-3 leading-relaxed">
           El joc del rave resumeix el procés: els canvis de pantalla representen

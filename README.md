@@ -15,7 +15,7 @@ Obre l’adreça que apareix al terminal. Per generar el web estàtic: `npm run 
 
 ## Què hi ha
 
-- **Explorem l’hort:** 16 aliments, filtre per estacions i fitxes amb la part comestible, una pista de cultiu i una dada breu.
+- **Explorem l’hort:** 31 aliments, filtre per estacions i fitxes amb la part comestible, una pista de cultiu i una dada breu.
 - **Fem d’hortolans:** sis moments de la vida d’un rave, amb un esquema de l’arrel sota terra i el pas dels dies.
 - **Juguem:** cinc descobertes visuals, amb oportunitats de rectificar, sense temps límit ni penalitzacions.
 - **Lectura:** majúscules/minúscules amb preferència local, i veu en català si el dispositiu en té una.
@@ -23,7 +23,7 @@ Obre l’adreça que apareix al terminal. Per generar el web estàtic: `npm run 
 
 ## Decisions pedagògiques
 
-La temporada és una orientació per al consum i la disponibilitat a Catalunya, no una data de sembra. Les hortalisses poden pertànyer a més d’una estació. La carbassa i la ceba seca es poden conservar; per això temporada de consum i collita no sempre coincideixen.
+La temporada és una orientació per al consum i la disponibilitat a Catalunya, no una data de sembra. Els aliments poden pertànyer a més d’una estació. La carbassa, la ceba seca, l’all sec i la patata es poden conservar; per això temporada de consum i collita no sempre coincideixen.
 
 La simulació resumeix dies i setmanes. Regar, observar i cuidar són tasques repetides, no accions que només es facin una vegada. El rave s’ha escollit perquè permet observar canvis en poques setmanes, segons la varietat i les condicions.
 
