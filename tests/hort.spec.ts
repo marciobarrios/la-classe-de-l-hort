@@ -120,7 +120,9 @@ test("navegació, diàleg de famílies, imatges i amplada", async ({ page }) => 
     .first()
     .click();
   await expect(page.getByRole("dialog")).toBeVisible();
-  await expect(page.getByText("1. Gouache suau · escollit")).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: ci("De la pantalla a la terra") }),
+  ).toBeVisible();
   await expect
     .poll(() =>
       page.evaluate(() =>
