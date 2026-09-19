@@ -27,11 +27,11 @@ test("explorar estacions, obrir una fitxa i tornar amb el teclat", async ({
   ).toBeFocused();
   await page.getByRole("button", { name: /tot l’hort/i }).click();
   await expect(page.getByRole("button", { name: /^Descobreix:/ })).toHaveCount(
-    16,
+    31,
   );
   const vegetableImages = page.locator('img[src^="/images/hortalisses/"]');
-  await expect(vegetableImages).toHaveCount(16);
-  for (let index = 0; index < 16; index += 1) {
+  await expect(vegetableImages).toHaveCount(31);
+  for (let index = 0; index < 31; index += 1) {
     const image = vegetableImages.nth(index);
     await image.scrollIntoViewIfNeeded();
     await expect

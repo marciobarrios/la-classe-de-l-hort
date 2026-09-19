@@ -4,7 +4,7 @@ La proposta és un petit quadern de natura interactiu, per mirar-lo en família,
 
 ## Una mateixa idea, tres portes d’entrada
 
-**Explorar.** Tocar una hortalissa, aprendre’n el nom i descobrir si ens mengem l’arrel, les fulles, el bulb, les llavors, les flors o el fruit. Començar amb una imatge i una frase; ampliar només en obrir la fitxa.
+**Explorar.** Tocar un aliment de l’hort, aprendre’n el nom i descobrir si ens mengem l’arrel, les fulles, el bulb, el tubercle, el brot, les llavors, les flors o el fruit. Començar amb una imatge i una frase; ampliar només en obrir la fitxa.
 
 **Cuidar.** Acompanyar una llavor de rave: preparar la terra, sembrar, regar, observar, esperar i collir. Fer visible la feina repetida de l’hortolà i l’hortolana, i el temps que hi ha darrere del menjar.
 
@@ -12,7 +12,7 @@ La proposta és un petit quadern de natura interactiu, per mirar-lo en família,
 
 ## El que ja es pot fer
 
-- Explorar dotze aliments per estacions i obrir-ne les fitxes.
+- Explorar 31 aliments per estacions i obrir-ne les fitxes.
 - Llegir amb lletra de pal o minúscules; la preferència es conserva.
 - Seguir sis moments del cultiu d’un rave.
 - Resoldre cinc preguntes visuals i tornar-hi a jugar.

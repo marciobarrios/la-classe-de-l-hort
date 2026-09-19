@@ -169,7 +169,7 @@ function Explore({ onChoose }: { onChoose: (v: Vegetable) => void }) {
               key={v.id}
               onClick={() => onChoose(v)}
               aria-label={`Descobreix: ${v.name}`}
-              className="group text-left"
+              className="group self-start text-left"
             >
               <div
                 className="relative overflow-hidden rounded-[22px_30px_20px_27px] p-3 transition-colors group-hover:bg-[#e3dec8]"
