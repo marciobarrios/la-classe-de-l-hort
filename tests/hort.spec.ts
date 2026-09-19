@@ -138,17 +138,3 @@ test("navegació, diàleg de famílies, imatges i amplada", async ({ page }) => 
   await page.getByRole("button", { name: ci("Tanca"), exact: true }).click();
   expect(errors).toEqual([]);
 });
-
-test("la lectura ofereix una alternativa si no hi ha veu catalana", async ({
-  page,
-}) => {
-  await page.addInitScript(() =>
-    Object.defineProperty(window.speechSynthesis, "getVoices", {
-      value: () => [],
-    }),
-  );
-  await page.goto("/");
-  await page.getByRole("button", { name: ci("Descobreix: Pastanaga") }).click();
-  await page.getByRole("button", { name: ci("Escolta"), exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("Cal una veu en català");
-});

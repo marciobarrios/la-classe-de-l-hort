@@ -112,9 +112,7 @@ export default function Family() {
         </h3>
         <p className="leading-relaxed">
           Sense cronòmetres, anuncis ni comptes. La preferència de lletra es
-          desa només en aquest navegador. El botó «Escolta» fa servir una veu
-          catalana del dispositiu si n’hi ha; segons el sistema, el servei de
-          veu pot necessitar connexió. Les il·lustracions s’han generat per a
+          desa només en aquest navegador. Les il·lustracions s’han generat per a
           aquest projecte.
         </p>
       </section>

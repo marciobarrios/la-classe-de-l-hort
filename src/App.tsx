@@ -14,7 +14,7 @@ import {
   Sun,
 } from "lucide-react";
 import { seasons, vegetables, type Season, type Vegetable } from "./data";
-import { Listen, Modal, VegetableArt, primaryButton } from "./ui";
+import { Modal, VegetableArt, primaryButton } from "./ui";
 import Growing from "./Growing";
 import Game from "./Game";
 import Family from "./Family";
@@ -232,7 +232,6 @@ export default function App() {
     const handle = () => {
       setPage(getPage());
       window.scrollTo({ top: 0 });
-      window.speechSynthesis?.cancel();
     };
     window.addEventListener("hashchange", handle);
     return () => window.removeEventListener("hashchange", handle);
@@ -244,9 +243,6 @@ export default function App() {
       /* Reading works when storage is unavailable. */
     }
   }, [uppercase]);
-  useEffect(() => {
-    if ("speechSynthesis" in window) window.speechSynthesis.getVoices();
-  }, []);
   return (
     <div
       className={`${uppercase ? "uppercase tracking-[0.015em]" : ""} [&_button]:[text-transform:inherit]`}
@@ -355,11 +351,6 @@ export default function App() {
             <VegetableArt vegetable={selected} />
           </div>
           <p className="text-center text-xl leading-relaxed">{selected.fact}</p>
-          <div className="mt-4 flex justify-center">
-            <Listen
-              text={`${selected.article}. ${selected.fact} Ens mengem: ${selected.part}. ${selected.care}`}
-            />
-          </div>
           <div className="mt-5 space-y-4 rounded-2xl bg-[#e5e7d6] p-5">
             <div>
               <h3 className="mb-1 text-sm font-bold text-[#59664b]">

@@ -12,7 +12,7 @@ import {
   Timer,
 } from "lucide-react";
 import { growingSteps } from "./data";
-import { Listen, primaryButton } from "./ui";
+import { primaryButton } from "./ui";
 
 function PlantDiagram({ stage }: { stage: number }) {
   return (
@@ -201,11 +201,6 @@ export default function Growing() {
               ? "Hem cuidat la planta durant setmanes. Ara podem compartir el que hem collit."
               : current.text}
           </p>
-          <div className="mt-3">
-            <Listen
-              text={`${current.title}. ${current.text} ${current.task}`}
-            />
-          </div>
           <p className="mt-5 border-l-2 border-[#a6b082] pl-4 text-base leading-relaxed">
             {done ? "Un hort creix amb la feina de moltes mans." : current.task}
           </p>

@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
-import { Volume2, X } from "lucide-react";
+import { useEffect, useRef, type ReactNode } from "react";
+import { X } from "lucide-react";
 import type { Vegetable } from "./data";
 
 export function VegetableArt({
@@ -47,53 +47,6 @@ export function VegetableArt({
           backgroundPosition: `${(x / (1536 - width)) * 100}% ${(y / (1024 - height)) * 100}%`,
         }}
       />
-    </div>
-  );
-}
-
-export function Listen({ text }: { text: string }) {
-  const [notice, setNotice] = useState("");
-  useEffect(
-    () => () => {
-      window.speechSynthesis?.cancel();
-    },
-    [],
-  );
-  function speak() {
-    if (!("speechSynthesis" in window)) {
-      setNotice("Aquest navegador no pot llegir en veu alta.");
-      return;
-    }
-    const voice = window.speechSynthesis
-      .getVoices()
-      .find((v) => /^ca([-_]|$)/i.test(v.lang));
-    if (!voice) {
-      setNotice("Cal una veu en català al dispositiu. Ho podeu llegir junts.");
-      return;
-    }
-    setNotice("");
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "ca-ES";
-    utterance.voice = voice;
-    utterance.rate = 0.8;
-    utterance.onerror = () =>
-      setNotice("No s’ha pogut llegir. Torna-ho a provar.");
-    window.speechSynthesis.speak(utterance);
-  }
-  return (
-    <div>
-      <button
-        onClick={speak}
-        className="inline-flex min-h-11 items-center gap-2 rounded-full px-3 py-2 text-base font-bold text-leaf hover:bg-leaf/10"
-      >
-        <Volume2 size={20} aria-hidden="true" /> Escolta
-      </button>
-      {notice && (
-        <p role="status" className="mt-2 max-w-sm text-sm">
-          {notice}
-        </p>
-      )}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { ArrowRight, Check, Lightbulb, RotateCcw, Sprout } from "lucide-react";
 import { questions, vegetables } from "./data";
-import { Listen, VegetableArt, primaryButton } from "./ui";
+import { VegetableArt, primaryButton } from "./ui";
 
 export default function Game() {
   const questionHeading = useRef<HTMLHeadingElement>(null);
@@ -75,9 +75,6 @@ export default function Game() {
             >
               {q.prompt}
             </h2>
-            <div className="mt-2 flex justify-center">
-              <Listen text={q.prompt} />
-            </div>
           </div>
           <div className="grid grid-cols-3 gap-2 sm:gap-4">
             {q.options.map((id) => {
