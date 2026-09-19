@@ -14,7 +14,6 @@ La proposta és un petit quadern de natura interactiu, per mirar-lo en família,
 
 - Explorar dotze aliments per estacions i obrir-ne les fitxes.
 - Llegir amb lletra de pal o minúscules; la preferència es conserva.
-- Escoltar frases si hi ha una veu catalana al dispositiu.
 - Seguir sis moments del cultiu d’un rave.
 - Resoldre cinc preguntes visuals i tornar-hi a jugar.
 - Obrir l’espai de famílies i mestres amb activitats i fonts.
