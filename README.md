@@ -58,4 +58,4 @@ El lector de pantalla i la qualitat de la veu catalana necessiten una comprovaci
 
 ## Estat
 
-Primera versió local funcional. Repositori Git local, sense repositori remot ni desplegament públic. No cal cap clau ni compte extern per executar-la.
+Primera versió funcional. Repositori privat a [GitHub](https://github.com/marciobarrios/la-classe-de-l-hort), sense desplegament públic de la web. No cal cap clau ni compte extern per executar-la localment.

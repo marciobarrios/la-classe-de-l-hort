@@ -11,4 +11,4 @@
 
 No s’ha fet una prova amb infants, amb un lector de pantalla real ni amb una veu catalana real. Tampoc s’ha provat Safari o un dispositiu iOS físic. La lectura en veu alta depèn de les veus instal·lades al sistema; es comprova l’alternativa quan no hi ha veu catalana.
 
-No s’ha publicat a Internet ni s’ha creat cap repositori remot.
+La web no s’ha publicat a Internet. El projecte es conserva en un repositori privat a GitHub.
