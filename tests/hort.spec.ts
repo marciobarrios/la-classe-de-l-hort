@@ -101,6 +101,11 @@ test("el joc permet rectificar i acabar totes les descobertes", async ({
     "Pebrot",
     "Bleda",
     "Coliflor",
+    "Patata",
+    "Espàrrec",
+    "Maduixa",
+    "Remolatxa",
+    "Síndria",
   ];
   for (const [i, answer] of answers.entries()) {
     await page.getByRole("button", { name: ci(answer), exact: true }).click();

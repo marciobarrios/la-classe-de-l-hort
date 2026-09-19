@@ -15,7 +15,7 @@ La proposta és un petit quadern de natura interactiu, per mirar-lo en família,
 - Explorar 31 aliments per estacions i obrir-ne les fitxes.
 - Llegir amb lletra de pal o minúscules; la preferència es conserva.
 - Seguir sis moments del cultiu d’un rave.
-- Resoldre nou preguntes visuals i tornar-hi a jugar.
+- Resoldre catorze preguntes visuals i tornar-hi a jugar.
 - Obrir l’espai de famílies i mestres amb activitats i fonts.
 
 ## Direcció visual escollida

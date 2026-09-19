@@ -465,4 +465,34 @@ export const questions = [
     answer: "coliflor",
     why: "Les fulles verdes de la coliflor abracen el seu cap blanc.",
   },
+  {
+    prompt: "Quin aliment és un tubercle que creix sota terra?",
+    options: ["patata", "nap", "ceba"],
+    answer: "patata",
+    why: "La patata és un tubercle: una tija engruixida que creix sota terra.",
+  },
+  {
+    prompt: "Quin brot tendre surt de terra com una petita llança?",
+    options: ["esparrec", "calcot", "porro"],
+    answer: "esparrec",
+    why: "L’espàrrec és un brot tendre que surt de terra com una petita llança.",
+  },
+  {
+    prompt: "Quin aliment vermell té petits granets a fora?",
+    options: ["maduixa", "tomaquet", "remolatxa"],
+    answer: "maduixa",
+    why: "La maduixa té molts granets petits a la part de fora.",
+  },
+  {
+    prompt: "Quina arrel vermella pot tenyir-te els dits?",
+    options: ["remolatxa", "nap", "patata"],
+    answer: "remolatxa",
+    why: "El color intens de la remolatxa pot tenyir-nos els dits.",
+  },
+  {
+    prompt: "Quin fruit és verd per fora i vermell per dins?",
+    options: ["sindria", "melo", "carbassa"],
+    answer: "sindria",
+    why: "La síndria té la pell verda i una polpa vermella plena d’aigua.",
+  },
 ];

@@ -59,7 +59,8 @@ export default function Game() {
             Quantes coses hem descobert!
           </h2>
           <p className="mx-auto mt-4 max-w-md text-xl">
-            Arrels, fulles, fruits, flors i llavors. L’hort és ple de sorpreses.
+            Arrels, bulbs, tubercles, brots, fulles, fruits, flors i llavors.
+            L’hort és ple de sorpreses.
           </p>
           <button onClick={restart} className={`${primaryButton} mt-8`}>
             <RotateCcw size={20} /> Tornem a jugar
