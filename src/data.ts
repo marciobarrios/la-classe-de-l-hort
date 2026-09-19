@@ -4,10 +4,12 @@ export type Vegetable = {
   name: string;
   article: string;
   sprite: number;
+  atlas?: "new";
   seasons: Season[];
   part: string;
   fact: string;
   care: string;
+  more: string;
   color: string;
 };
 export const seasons: { id: Season; name: string; line: string }[] = [
@@ -27,6 +29,7 @@ export const vegetables: Vegetable[] = [
     part: "El fruit",
     fact: "Soc grossa i tinc llavors a dins.",
     care: "Necessito espai per estirar les tiges.",
+    more: "Soc de la mateixa família que el carbassó i el cogombre.",
     color: "#eddec4",
   },
   {
@@ -38,6 +41,7 @@ export const vegetables: Vegetable[] = [
     part: "L’arrel",
     fact: "La meva arrel creix sota terra.",
     care: "M’agrada la terra flonja, sense pedres.",
+    more: "També hi ha pastanagues morades, grogues i blanques.",
     color: "#f0dfca",
   },
   {
@@ -49,6 +53,7 @@ export const vegetables: Vegetable[] = [
     part: "El fruit",
     fact: "Tinc la pell lila i llavors a dins.",
     care: "Necessito sol i escalfor.",
+    more: "Soc un fruit de la planta, tot i que em cuinen com una hortalissa.",
     color: "#e5dfe7",
   },
   {
@@ -60,6 +65,7 @@ export const vegetables: Vegetable[] = [
     part: "Les fulles",
     fact: "Les meves fulles fan una gran roseta.",
     care: "Cal regar la terra sense entollar-la.",
+    more: "Soc una verdura: una hortalissa de fulla verda.",
     color: "#e2e6cf",
   },
   {
@@ -71,6 +77,7 @@ export const vegetables: Vegetable[] = [
     part: "El fruit",
     fact: "Primer soc verd. Quan maduro, canvio de color.",
     care: "Una canya ajuda a sostenir la meva planta.",
+    more: "Vaig arribar d’Amèrica i ara soc molt present a la cuina mediterrània.",
     color: "#efdcd2",
   },
   {
@@ -82,6 +89,7 @@ export const vegetables: Vegetable[] = [
     part: "El fruit",
     fact: "Abans de ser carbassó, hi havia una flor.",
     care: "Les abelles visiten les meves flors.",
+    more: "Soc de la mateixa família que la carbassa i el cogombre.",
     color: "#dde5d5",
   },
   {
@@ -93,6 +101,7 @@ export const vegetables: Vegetable[] = [
     part: "Les llavors",
     fact: "Som llavors amagades dins d’una beina.",
     care: "Ens podem enfilar per una xarxa.",
+    more: "La pesolera s’agafa als suports amb uns fils fins anomenats circells.",
     color: "#e3e6c9",
   },
   {
@@ -104,6 +113,7 @@ export const vegetables: Vegetable[] = [
     part: "La flor encara tancada",
     fact: "Si no em cullen, m’obro en una flor lila.",
     care: "La meva planta necessita molt d’espai.",
+    more: "Les fulles exteriors protegeixen la part tendra que ens mengem.",
     color: "#dce3d3",
   },
   {
@@ -115,6 +125,7 @@ export const vegetables: Vegetable[] = [
     part: "Les flors encara tancades",
     fact: "Semblo un arbre molt petit.",
     care: "Creixo bé quan no fa gaire calor.",
+    more: "El meu cap verd agrupa moltes flors que encara no s’han obert.",
     color: "#dbe2cf",
   },
   {
@@ -126,6 +137,7 @@ export const vegetables: Vegetable[] = [
     part: "Les fulles",
     fact: "Tenim fulles verdes i tendres.",
     care: "Ens agrada el temps fresc.",
+    more: "Les fulles més petites i tendres també es poden menjar crues.",
     color: "#dfe5d4",
   },
   {
@@ -137,6 +149,7 @@ export const vegetables: Vegetable[] = [
     part: "El bulb",
     fact: "El meu bulb té moltes capes.",
     care: "En assecar-me, em poden guardar més temps.",
+    more: "El bulb es forma amb fulles gruixudes que guarden aliment.",
     color: "#eee0c5",
   },
   {
@@ -148,7 +161,60 @@ export const vegetables: Vegetable[] = [
     part: "L’arrel",
     fact: "Amago una arrel rodona sota terra.",
     care: "Alguns raves es poden collir al cap de poques setmanes.",
+    more: "Hi ha raves rodons i allargats, de colors vermells, blancs o morats.",
     color: "#efdedb",
+  },
+  {
+    id: "cogombre",
+    name: "Cogombre",
+    article: "El cogombre",
+    sprite: 0,
+    atlas: "new",
+    seasons: ["estiu", "tardor"],
+    part: "El fruit",
+    fact: "Soc llarg, verd i tinc llavors a dins.",
+    care: "La meva planta s’enfila i necessita aigua regularment.",
+    more: "La meva millor temporada va del juny a l’octubre.",
+    color: "#dce4d1",
+  },
+  {
+    id: "pebrot",
+    name: "Pebrot",
+    article: "El pebrot",
+    sprite: 1,
+    atlas: "new",
+    seasons: ["estiu", "tardor"],
+    part: "El fruit",
+    fact: "Tinc la pell brillant i moltes llavors a dins.",
+    care: "Necessito sol i una terra ben alimentada.",
+    more: "Puc ser verd, vermell, groc o taronja segons la varietat i la maduració.",
+    color: "#efdad2",
+  },
+  {
+    id: "bleda",
+    name: "Bleda",
+    article: "La bleda",
+    sprite: 2,
+    atlas: "new",
+    seasons: ["hivern", "primavera"],
+    part: "Les fulles i les penques",
+    fact: "Tinc fulles grans i unes tiges amples anomenades penques.",
+    care: "Puc créixer en un racó amb una mica d’ombra.",
+    more: "Hi ha bledes amb penques blanques, grogues o vermelles.",
+    color: "#dfe5d3",
+  },
+  {
+    id: "coliflor",
+    name: "Coliflor",
+    article: "La coliflor",
+    sprite: 3,
+    atlas: "new",
+    seasons: ["tardor", "hivern", "primavera"],
+    part: "Les flors encara tancades",
+    fact: "Les fulles verdes abracen el meu cap blanc.",
+    care: "M’agrada créixer quan el temps és fresc.",
+    more: "La part blanca agrupa moltes flors que encara no s’han obert.",
+    color: "#e6e4d3",
   },
 ];
 export const growingSteps = [

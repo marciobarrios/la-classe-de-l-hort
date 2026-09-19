@@ -10,7 +10,7 @@ export function VegetableArt({
   className?: string;
 }) {
   // Individual bounds keep neighboring paintings out of each illustration.
-  const crops = [
+  const originalCrops = [
     [22, 35, 356, 304],
     [403, 12, 350, 360],
     [800, 13, 339, 334],
@@ -24,7 +24,18 @@ export function VegetableArt({
     [811, 650, 298, 354],
     [1143, 650, 381, 374],
   ];
-  const [x, y, width, height] = crops[vegetable.sprite];
+  const newCrops = [
+    [0, 0, 627, 570],
+    [627, 0, 627, 570],
+    [0, 570, 627, 684],
+    [627, 570, 627, 684],
+  ];
+  const isNew = vegetable.atlas === "new";
+  const sheetWidth = isNew ? 1254 : 1536;
+  const sheetHeight = isNew ? 1254 : 1024;
+  const [x, y, width, height] = (isNew ? newCrops : originalCrops)[
+    vegetable.sprite
+  ];
   const ratio = width / height;
   return (
     <div
@@ -42,9 +53,9 @@ export function VegetableArt({
               : vegetable.id === "rave"
                 ? "polygon(0 0, 38% 0, 38% 5%, 63% 5%, 63% 0, 100% 0, 100% 100%, 0 100%)"
                 : undefined,
-          backgroundImage: "url(/images/hortalisses.webp)",
-          backgroundSize: `${(1536 / width) * 100}% ${(1024 / height) * 100}%`,
-          backgroundPosition: `${(x / (1536 - width)) * 100}% ${(y / (1024 - height)) * 100}%`,
+          backgroundImage: `url(/images/${isNew ? "hortalisses-noves.webp" : "hortalisses.webp"})`,
+          backgroundSize: `${(sheetWidth / width) * 100}% ${(sheetHeight / height) * 100}%`,
+          backgroundPosition: `${(x / (sheetWidth - width)) * 100}% ${(y / (sheetHeight - height)) * 100}%`,
         }}
       />
     </div>

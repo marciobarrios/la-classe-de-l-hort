@@ -27,7 +27,12 @@ test("explorar estacions, obrir una fitxa i tornar amb el teclat", async ({
   ).toBeFocused();
   await page.getByRole("button", { name: /tot l’hort/i }).click();
   await expect(page.getByRole("button", { name: /^Descobreix:/ })).toHaveCount(
-    12,
+    16,
+  );
+  await page.getByRole("button", { name: ci("Descobreix: Bleda") }).click();
+  await expect(page.getByRole("dialog")).toContainText("Una descoberta més");
+  await expect(page.getByRole("dialog")).toContainText(
+    "penques blanques, grogues o vermelles",
   );
 });
 
