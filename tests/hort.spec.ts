@@ -29,6 +29,15 @@ test("explorar estacions, obrir una fitxa i tornar amb el teclat", async ({
   await expect(page.getByRole("button", { name: /^Descobreix:/ })).toHaveCount(
     16,
   );
+  const vegetableImages = page.locator('img[src^="/images/hortalisses/"]');
+  await expect(vegetableImages).toHaveCount(16);
+  for (let index = 0; index < 16; index += 1) {
+    const image = vegetableImages.nth(index);
+    await image.scrollIntoViewIfNeeded();
+    await expect
+      .poll(() => image.evaluate((element) => element.naturalWidth))
+      .toBeGreaterThan(0);
+  }
   await page.getByRole("button", { name: ci("Descobreix: Bleda") }).click();
   await expect(page.getByRole("dialog")).toContainText("Una descoberta més");
   await expect(page.getByRole("dialog")).toContainText(
@@ -131,9 +140,11 @@ test("navegació, diàleg de famílies, imatges i amplada", async ({ page }) => 
   await expect
     .poll(() =>
       page.evaluate(() =>
-        Array.from(document.images).every(
-          (i) => i.complete && i.naturalWidth > 0,
-        ),
+        Array.from(
+          document.querySelectorAll<HTMLImageElement>(
+            "img:not([loading='lazy'])",
+          ),
+        ).every((i) => i.complete && i.naturalWidth > 0),
       ),
     )
     .toBe(true);

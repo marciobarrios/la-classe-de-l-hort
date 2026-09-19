@@ -2,7 +2,7 @@
 
 Generades amb l'eina integrada image_gen el 19 de setembre de 2026. Les tres imatges aportades per la família són referències de direcció artística i no s'inclouen en el lloc web. Imatges originals generades i optimitzades per al web. No s'han copiat il·lustracions de bancs d'imatges.
 
-Fitxers: public/images/hort.webp, public/images/hortalisses.webp i public/images/hortalisses-noves.webp. Els atles d'hortalisses es mostren amb enquadrament CSS per conservar els fitxers originals complets.
+Fitxers: public/images/hort.webp i public/images/hortalisses/*.webp. Cada hortalissa té un WebP independent identificat pel seu `id`; així se'n poden afegir de noves sense regenerar ni tornar a descarregar un atles complet.
 
 ## Prompts finals
 
