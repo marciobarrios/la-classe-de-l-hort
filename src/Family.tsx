@@ -1,10 +1,4 @@
-import {
-  BookOpen,
-  ExternalLink,
-  Heart,
-  Paintbrush,
-  Sprout,
-} from "lucide-react";
+import { BookOpen, ExternalLink, Heart, Sprout } from "lucide-react";
 
 export default function Family() {
   return (
@@ -13,40 +7,6 @@ export default function Family() {
         Un hort per mirar, tocar i fer-se preguntes. Pensat per a infants de
         primer, amb frases curtes, il·lustracions i temps per descobrir.
       </p>
-      <section>
-        <h3 className="mb-4 flex items-center gap-3 text-xl font-extrabold">
-          <Paintbrush size={23} /> Tres maneres de dibuixar l’hort
-        </h3>
-        <img
-          src="/images/estils.webp"
-          alt="Comparació dels mateixos aliments: gouache suau a l’esquerra, gravat botànic al centre i llapis de colors a la dreta."
-          className="w-full rounded-2xl"
-          width="1800"
-          height="600"
-        />
-        <div className="mt-4 grid gap-4 sm:grid-cols-3">
-          <div>
-            <h4 className="font-extrabold">1. Gouache suau · escollit</h4>
-            <p className="mt-1 text-sm leading-relaxed">
-              Taques de color, textura de paper i formes càlides. L’estil
-              d’aquesta primera versió.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-extrabold">2. Gravat botànic</h4>
-            <p className="mt-1 text-sm leading-relaxed">
-              Línies tallades, pocs colors i un aire de làmina de natura.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-extrabold">3. Llapis de colors</h4>
-            <p className="mt-1 text-sm leading-relaxed">
-              Traços visibles, colors vius i la proximitat d’un quadern de
-              dibuix.
-            </p>
-          </div>
-        </div>
-      </section>
       <section className="rounded-2xl bg-[#e7e8d6] p-5">
         <h3 className="mb-3 flex items-center gap-3 text-xl font-extrabold">
           <Sprout size={23} /> De la pantalla a la terra

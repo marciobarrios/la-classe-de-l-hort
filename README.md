@@ -19,7 +19,7 @@ Obre l’adreça que apareix al terminal. Per generar el web estàtic: `npm run 
 - **Fem d’hortolans:** sis moments de la vida d’un rave, amb un esquema de l’arrel sota terra i el pas dels dies.
 - **Juguem:** cinc descobertes visuals, amb oportunitats de rectificar, sense temps límit ni penalitzacions.
 - **Lectura:** majúscules/minúscules amb preferència local, i veu en català si el dispositiu en té una.
-- **Famílies i mestres:** propostes d’aula, fonts del contingut i tres direccions d’il·lustració. La família ha escollit gouache suau.
+- **Famílies i mestres:** propostes d’aula, fonts del contingut i criteris de lectura i privacitat.
 
 ## Decisions pedagògiques
 
