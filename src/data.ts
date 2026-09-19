@@ -441,4 +441,28 @@ export const questions = [
     answer: "ceba",
     why: "El bulb de la ceba té capes, una dins de l’altra.",
   },
+  {
+    prompt: "Quin aliment és llarg, verd i té llavors a dins?",
+    options: ["cogombre", "ceba", "coliflor"],
+    answer: "cogombre",
+    why: "El cogombre és un fruit llarg i verd, amb llavors a dins.",
+  },
+  {
+    prompt: "Quin aliment pot ser verd, vermell, groc o taronja?",
+    options: ["pebrot", "pastanaga", "alberginia"],
+    answer: "pebrot",
+    why: "Hi ha pebrots verds, vermells, grocs i taronges.",
+  },
+  {
+    prompt: "Quin aliment té fulles grans i penques amples?",
+    options: ["bleda", "carbasso", "broquil"],
+    answer: "bleda",
+    why: "La bleda té fulles grans i tiges amples que anomenem penques.",
+  },
+  {
+    prompt: "Quin aliment té un cap blanc abraçat per fulles verdes?",
+    options: ["coliflor", "enciam", "rave"],
+    answer: "coliflor",
+    why: "Les fulles verdes de la coliflor abracen el seu cap blanc.",
+  },
 ];

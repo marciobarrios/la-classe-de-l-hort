@@ -91,18 +91,25 @@ test("el joc permet rectificar i acabar totes les descobertes", async ({
   await page.goto("/#juguem");
   await page.getByRole("button", { name: ci("Enciam"), exact: true }).click();
   await expect(page.getByText(/Prova un altre aliment/)).toBeVisible();
-  for (const [i, answer] of [
+  const answers = [
     "Pastanaga",
     "Enciam",
     "Pèsols",
     "Bròquil",
     "Ceba",
-  ].entries()) {
+    "Cogombre",
+    "Pebrot",
+    "Bleda",
+    "Coliflor",
+  ];
+  for (const [i, answer] of answers.entries()) {
     await page.getByRole("button", { name: ci(answer), exact: true }).click();
     await expect(page.getByText("Ho has descobert!")).toBeVisible();
     await page
       .getByRole("button", {
-        name: ci(i === 4 ? "Hem acabat!" : "Una altra descoberta"),
+        name: ci(
+          i === answers.length - 1 ? "Hem acabat!" : "Una altra descoberta",
+        ),
         exact: true,
       })
       .click();

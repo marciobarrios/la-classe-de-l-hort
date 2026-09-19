@@ -36,8 +36,8 @@ export default function Game() {
       </div>
       <div
         role="img"
-        className="my-8 flex justify-center gap-3"
-        aria-label={`${complete ? 5 : index} descobertes de 5`}
+        className="mx-auto my-8 flex max-w-sm flex-wrap justify-center gap-3"
+        aria-label={`${complete ? questions.length : index} descobertes de ${questions.length}`}
       >
         {questions.map((_, i) => (
           <Sprout
